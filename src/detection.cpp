@@ -48,6 +48,7 @@ void Detect::drive_robot(float lin_x, float ang_z) {
 }
 
 void Detect::LaserCallback(const sensor_msgs::LaserScan::ConstPtr& msg) {
+	ROS_INFO("GETTING THE DISTANCE OF OBJECT AFTER ALIGNMENT");
 	if(aligned) {
 		double min_dist1 = 3.0;
 		double min_dist2 = 3.0;
