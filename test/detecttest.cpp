@@ -38,15 +38,14 @@ TEST(TestDetection3, reddetectionloc) {
 
 /*
 // Test to check if robot is rotating once on no object found
-// TEST(TestDetection4, checkrot) {
-//   ros::NodeHandle ns;
-//   Detect de(ns);
-//   cv::Mat img;
-//   img = cv::imread("/black.jpg");
-//   de.robot_motion(img);
-//   de.spotted = false
-//   EXPECT_EQ(1, de.rotate);
-// }
+TEST(TestDetection4, checkrot) {
+   ros::NodeHandle ns;
+   Detect de(ns);
+   cv::Mat img;
+   img = cv::imread("/black.jpg");
+   de.robot_motion(img);
+   de.spotted = false;
+   EXPECT_EQ(0,de.rotate); }
 
 // // Test to check publisher of robot
 // TEST(TestNavigateRobot, teststartdetect) {
