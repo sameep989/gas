@@ -7,7 +7,7 @@ os: linux
 # Configuration variables. All variables are global
 env:
   global:
-    - ROS_DISTRO=noetic
+    - ROS_DISTRO=melodic
     - ROS_CI_DESKTOP="`lsb_release -cs`"  # e.g. [precise|trusty|...]
     - CI_SOURCE_PATH=$(pwd)
     - ROSINSTALL_FILE=$CI_SOURCE_PATH/dependencies.rosinstall
