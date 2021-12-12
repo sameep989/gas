@@ -78,7 +78,7 @@ script:
   - catkin_make
   # Run the tests, ensuring the path is set correctly.
   - source devel/setup.bash
-  - catkin_make run_tests
+  - catkin_make 
 
 after_success:
   - cd ~/catkin_ws/build/gas/CMakeFiles
