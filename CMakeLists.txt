@@ -40,7 +40,8 @@ if (CATKIN_ENABLE_TESTING)
    test/collect_test.cpp 
    test/main_test.cpp 
    src/collect.cpp
-   src/detection.cpp)
+   src/detection.cpp
+   src/Traverse.cpp)
 
   target_link_libraries(
    test_gas 

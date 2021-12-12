@@ -37,7 +37,7 @@ before_install:
   - sudo rm /home/travis/.ros/rosdep/sources.cache/index
   - sudo rm /etc/ros/rosdep/sources.list.d/20-default.list
   - sudo rosdep init
-  - osdep update
+  - rosdep update
   # Prepare rosdep to install dependencies.
   - sudo rosdep init
   - rosdep update

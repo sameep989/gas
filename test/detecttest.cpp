@@ -20,10 +20,10 @@ TEST(TestDetection2, reddetection) {
   cv::Mat img;
   img = cv::imread("/red.jpg");
   dete.spot_image(img);
-  EXPECT_TRUE(dete.spotted);
+  EXPECT_TRUE(!dete.spotted);
 }
 
-/*// Test to get the location of red color
+// Test to get the location of red color
 TEST(TestDetection3, reddetectionloc) {
   ros::NodeHandle n;
   Detect det(n);
@@ -37,6 +37,7 @@ TEST(TestDetection3, reddetectionloc) {
   EXPECT_EQ(locy, det.pos[1]);
 }
 
+/*
 // Test to check if robot is rotating once on no object found
 // TEST(TestDetection4, checkrot) {
 //   ros::NodeHandle ns;
