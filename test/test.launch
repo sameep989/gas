@@ -1,0 +1,5 @@
+<launch>
+
+	<include file="$(find gas)/launch/world.launch"/>
+	<test test-name="test_gas" pkg="gas" type="test_gas" />
+</launch>
