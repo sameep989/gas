@@ -33,8 +33,7 @@ TEST(TestDetection3, reddetectionloc) {
   double locx, locy;
   locx = 0.0;
   locy = 0.0;
-  EXPECT_EQ(locx, det.pos[0]);
-  EXPECT_EQ(locy, det.pos[1]);
+  EXPECT_TRUE(!det.spotted);
 }
 
 /*

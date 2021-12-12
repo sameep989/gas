@@ -36,11 +36,9 @@ before_install:
   - sudo rosdep update
   - sudo rm /home/travis/.ros/rosdep/sources.cache/index
   - sudo rm /etc/ros/rosdep/sources.list.d/20-default.list
-  - sudo rosdep init
-  - rosdep update
   # Prepare rosdep to install dependencies.
   - sudo rosdep init
-  - rosdep update
+  - sudo rosdep update
   - export TURTLEBOT3_MODEL= waffle_pi
 
 # Create a catkin workspace with the package under integration.
