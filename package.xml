@@ -57,8 +57,6 @@
   <build_export_depend>rospy</build_export_depend>
   <build_export_depend>gazebo_msgs</build_export_depend>
   <build_export_depend>std_msgs</build_export_depend>
-  <build_depend>OpenCV</build_depend>
-  <exec_depend>OpenCV</exec_depend>
   <build_depend>eigen</build_depend>
   <build_export_depend>eigen</build_export_depend>
   <exec_depend>roscpp</exec_depend>
