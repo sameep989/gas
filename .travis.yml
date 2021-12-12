@@ -34,7 +34,7 @@ before_install:
   - curl -sSL http://get.gazebosim.org | sh
   - sudo rosdep init
   - sudo rosdep update
-  - sudo rm /home/username/.ros/rosdep/sources.cache/index
+  - sudo rm /home/travis/.ros/rosdep/sources.cache/index
   - sudo rm /etc/ros/rosdep/sources.list.d/20-default.list
   - sudo rosdep init
   - osdep update

@@ -16,7 +16,7 @@
 // Test to spot red color in image
 TEST(TestDetection2, reddetection) {
   ros::NodeHandle nh;
-  detect dete(nh);
+  Detect dete(nh);
   cv::Mat img;
   img = cv::imread("/red.jpg");
   dete.spot_image(img);
