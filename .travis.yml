@@ -13,6 +13,7 @@ env:
     - ROSINSTALL_FILE=$CI_SOURCE_PATH/dependencies.rosinstall
     - CATKIN_OPTIONS=$CI_SOURCE_PATH/catkin.options
     - ROS_PARALLEL_JOBS='-j8 -l6'
+    - COVERAGE=$CI_SOURCE_PATH/test_gas.dir
 
 ################################################################################
 
@@ -80,7 +81,10 @@ script:
   - catkin_make run_tests
 
 after_success:
-  - cd ~/catkin_ws/build
+  - cd ~/catkin_ws/build/gas/CMakeFiles
+  - ln -s $COVERAGE .
+  - cd ..
+  - cd ..
   - lcov --directory . --capture --output-file coverage.info
   - lcov --remove coverage.info '/opt/*' '/usr/*' '*/devel/*' '*test_*' '*_test*' --output-file coverage.info
   - lcov --list coverage.info
