@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0.2)
 project(gas)
 
 ## Find catkin and any catkin packages
-find_package(catkin REQUIRED COMPONENTS roscpp rospy std_msgs message_generation tf rostest move_base_msgs cv_bridge sensor_msgs geometry_msgs nav_msgs)
+find_package(catkin REQUIRED COMPONENTS roscpp rospy std_msgs message_generation tf rostest move_base_msgs cv_bridge sensor_msgs geometry_msgs nav_msgs gazebo_msgs)
 
 ## Generate messages in the 'msg' folder
 # add_message_files(
