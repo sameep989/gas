@@ -80,6 +80,6 @@ script:
   - catkin_make 
 
 after_success:
-  - cd ~/catkin_ws/gas
+  - cd ~/catkin_ws/src/gas
   - lcov --list coverage.info
   - coveralls-lcov coverage.info
